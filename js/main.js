@@ -46,7 +46,10 @@ $(document).ready(function() {
 
                           if (attribute != 'city' &&
                             attribute != 'styleUrl' &&
-                            attribute != 'styleHash' ) {
+                            attribute != 'styleHash' &&
+                            attribute != 'Asia' &&
+                            attribute != 'Europe' &&
+                            attribute != 'Rest') {
 
                                   if ($.inArray(attribute, timestamps) === -1) {
                                         timestamps.push(attribute);
@@ -250,6 +253,7 @@ $(document).ready(function() {
           const easyButton = L.easyButton('<img src="https://img.icons8.com/material-sharp/18/000000/home-page.png"/>', function(){map.setView([36.879621, 30.719254], 2.3)}).addTo(map);
           //fix to center home icon inside of button
           easyButton.button.style.padding ='0px';
+
 
           //set variables to get elementID
           var yearButton = document.getElementById("yearButton");
