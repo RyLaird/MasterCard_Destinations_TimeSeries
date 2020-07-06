@@ -53,12 +53,9 @@ body {
   float: left;
   height: 100%;
   max-width: 100%;
-  width: 250px;
+  width: 275px;
 }
 
-.topdata {
-
-}
 
 #map {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -84,7 +81,7 @@ body {
 .dropdown {
   outline: none;
   position: absolute;
-  top: 19%;
+  top: 26%;
   left: 48%;
   transform: translate(-50%, -50%);
 }
@@ -106,6 +103,12 @@ input[type= "button"]:focus {
   box-shadow: none;
   cursor: pointer;
   color: #fff;
+}
+
+@-moz-document url-prefix() {
+  .dropdown {
+    top: 23%
+  }
 }
 
 #dropdown ul {
@@ -193,7 +196,7 @@ margin-bottom: 30px;
 
 .data-group {
   text-align: left;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-left: 10px;
 }
 
@@ -204,6 +207,9 @@ margin-bottom: 30px;
   font-size: 16px;
 }
 
+#sources {
+  font-size: 8px;
+}
 @media (max-width: 767px) {
   .legend  {
     display: none,

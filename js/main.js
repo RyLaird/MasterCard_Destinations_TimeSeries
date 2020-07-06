@@ -345,7 +345,7 @@ $(document).ready(function() {
             var addYear = L.DomUtil.create("div", "currentyear");
             addYear.id = "currentyear";
 
-            $(addYear).append("Top 20 Visited Cities in " + timestamp + "<br></br>");
+            $(addYear).append("Top 20 Visited Cities in " + timestamp);
             $(datarank).append(addYear);
 
             cities.eachLayer(function(layer) {
