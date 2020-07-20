@@ -19,7 +19,7 @@ $(document).ready(function() {
 
         function getData(map){
             //load the data
-         $.ajax("/575_github/TimeSeries_RL/data/mastercardDestinations.geojson", {
+         $.ajax("/data/mastercardDestinations.geojson", {
                 dataType: "json",
                 success: function(response){
                     //create an attributes array
